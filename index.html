@@ -66,65 +66,48 @@
 
 </head>
 <body>
-<!--<div class="jumbotron">
-	<div class="container row center">
-		<h1>Hey There!</h1>
-		<h2>Introducing Quiz Master.</h2>
-		<h3>No open leaderboards. No inhibitions.</h3>
-        <div class="col l6 center-align">
-            <a class="btn center-align" href="/login/">Login</a>
-        </div>
-        <div class="col l6 center-align">
-            <a class="btn center-align" href="/signup/">Sign Up</a>
-        </div>
-	</div>
-</div>
--->
-
 
 <script src="jquery-3.1.0.min.js"></script>
 <script src="typed.js"></script>
 <script>
     $(function () {
         var a = $('.typing');
+        var b = $('.final-thanks');
         a.typed({
             strings: ["Dear teacher,^1000<br>^300 Today, ^1000I am writing this to you, ^1000just to say, ^1000 Thank you.<br>^1000" +
             "Thank you, for correcting my slant lines in \'A\',^800 <br>^1000" +
-            "for helping me recite all the different rhymes, ^1000<br>^1200" +
+            "for teaching me recite different rhymes, ^1000<br>^1200" +
             "for teaching me to read, write and ^600express, ^1000<br>^1200" +
             "for teaching me additions and subtractions, ^1000<br>" +
-            "for telling me how countries were made and how they broke. ^500<br>^1000" +
-            "Thank you, for teaching me why the earth is blue and not any other color, ^700<br>^1000" +
-            "for telling me how to draw the heart in the biology class, ^1000<br>" +
+            "for telling me how countries were made and how they broke, ^500<br>^1000" +
             "for correcting my mistakes.^200<br>^1000" +
-            "Thank you for teaching me^600 how to play with numbers.^800<br>^1000" +
-            "Thank you for teaching me^700 how to learn.^1000<br>^1200" +
-            "Thank you for making me realize my potential.^1000<br>^1200" +
-            "Thank you for all the beautiful memories.^800<br>^1000" +
-            "Most of all,^600 thank you for making me what I am today."],
+            "Thank you^200 for teaching me^600 how to play with numbers, ^1000" +
+            "how to get my math right.^800<br>^1000" +
+            "Thank you^200 for teaching me^700 how to learn.^1000<br>^1200" +
+            "Thank you^200 for making me realize my potential.^1000<br>^1200" +
+            "Thank you for all the beautiful memories and lessons.^800<br>^1000" +
+            "Most of all,^600 thank you for making a huge impact on what I am today. ^1000"],
             typeSpeed: 50,
-            startDelay: 3000,
+            startDelay: 2000,
             callback: function () {
-                a.fadeTo('1500', 0, complete = function () {
-                    a.fadeTo('fast',1);
-                    a.typed({
+                b.typed({
                         strings:["<center><h1>Thank you<br>"+":)<br>"],
                         typeSpeed:200,
                         cursorChar: ""
-                    })
-
-                });
+                    });
             }
         });
+        
 
     });
 
+
 </script>
     
-<!-- Container element -->
 
 <div class="container">
     <span class="typing"></span>
+    <span class="final-thanks"></span>
 </div>
 
 </body>
